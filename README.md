@@ -2,15 +2,15 @@
 This repository contains a Python script designed for the spatial analysis of single-cell data, including quadrant analysis, density plotting, and advanced statistical analysis such as the nearest-neighbor radius and cross-G-Function analysis.
 
 # Table of Contents
-- Step 1: Required Libraries
-- Step 2: Data Importation or Generation
-- Step 3: Geographic Cells Distribution
-- Step 4: Spatial Distribution at the Single-Cell Level
-- Step 5:Creation of Distance Matrices
-- Step 6: Scatter Plot and Connectivity Dot Plot
-- Step 7: Nearest-Neighbor Radius Analysis
-- Step 8:Cross-G-Function Analysis
-- Step 9:How to Run
+1 - Required Libraries
+- Data Importation or Generation
+- Geographic Cells Distribution
+- Spatial Distribution at the Single-Cell Level
+- Creation of Distance Matrices
+- Scatter Plot and Connectivity Dot Plot
+- Nearest-Neighbor Radius Analysis
+- Cross-G-Function Analysis
+- How to Run
 
 # Required Libraries
 The following Python libraries are required to run the script:
