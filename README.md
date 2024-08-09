@@ -58,21 +58,21 @@ The script starts by importing an Excel file containing the single-cell data. Th
 
 Alternatively, you can generate a dummy dataset directly in the script. This dataset contains 100 cells with randomly generated X and Y coordinates, and a KM_label column indicating the cell population (1 or 2).
 
-import numpy as np
-import pandas as pd
+**import numpy as np**
+**import pandas as pd**
 
-np.random.seed(42) *# Set the seed for reproducibility*
+**np.random.seed(42)** *# Set the seed for reproducibility*
 
-num_cells = 100 *# Create a dummy dataset*
-X_coordinates = np.random.uniform(0, 100, num_cells)
-Y_coordinates = np.random.uniform(0, 100, num_cells)
-KM_labels = np.random.choice([1, 2], num_cells)
+**num_cells = 100** *# Create a dummy dataset*
+**X_coordinates = np.random.uniform(0, 100, num_cells)**
+**Y_coordinates = np.random.uniform(0, 100, num_cells)**
+**KM_labels = np.random.choice([1, 2], num_cells)**
 
-data = pd.DataFrame({ *# Combine into a DataFrame*
+**data = pd.DataFrame({ *# Combine into a DataFrame*
     'X': X_coordinates,
     'Y': Y_coordinates,
     'KM_label': KM_labels
-})
+})**
 
 print(data.head()) *# Display the first few rows of the dataset*
 
