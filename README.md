@@ -2,7 +2,7 @@
 This repository contains a Python script designed for the spatial analysis of single-cell data, including quadrant analysis, density plotting, and advanced statistical analysis such as the nearest-neighbor radius and cross-G-Function analysis.
 
 # Table of Contents
-- 1 - Required Libraries
+- Required Libraries
 - Data Importation or Generation
 - Geographic Cells Distribution
 - Spatial Distribution at the Single-Cell Level
@@ -15,40 +15,38 @@ This repository contains a Python script designed for the spatial analysis of si
 # Required Libraries
 The following Python libraries are required to run the script:
 
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import glob
-import os
-import seaborn as sns
-from tifffile import imread
-#import scanpy as sc
-#import umap
-from sklearn.manifold import TSNE
-from sklearn.cluster import KMeans
-#import leidenalg
-from mpl_toolkits.mplot3d import axes3d
-from scipy import stats
-from scipy.spatial import distance
-from scipy.interpolate import griddata
-from pointpats import ripley
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
-from sklearn.cluster import DBSCAN
-from scipy.spatial import distance
-from scipy.stats import poisson
-from scipy.stats import norm
-#from .geometry import TREE_TYPES
-#%matplotlib notebook
+- import pandas as pd
+- import matplotlib.pyplot as plt
+- import numpy as np
+- import glob
+- import os
+- import seaborn as sns
+- from tifffile import imread
+- #import scanpy as sc
+- #import umap
+- from sklearn.manifold import TSNE
+- from sklearn.cluster import KMeans
+- #import leidenalg
+- from mpl_toolkits.mplot3d import axes3d
+- from scipy import stats
+- from scipy.spatial import distance
+- from scipy.interpolate import griddata
+- from pointpats import ripley
+- from sklearn.preprocessing import MinMaxScaler, StandardScaler
+- from sklearn.cluster import DBSCAN
+- from scipy.spatial import distance
+- from scipy.stats import poisson
+- from scipy.stats import norm
+- #from .geometry import TREE_TYPES
+- #%matplotlib notebook
+  
+- from sklearn.preprocessing import MinMaxScaler, StandardScaler
+- from sklearn.cluster import KMeans
 
-import pandas as pd
-import numpy as np
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
-from sklearn.cluster import KMeans
+- from scipy.interpolate import griddata
+- from scipy.stats import norm
 
-from scipy.interpolate import griddata
-from scipy.stats import norm
-
-from scipy.stats import poisson
+- from scipy.stats import poisson
 
 # Data Importation or Generation
 You can either import your own data from an Excel file or generate a dummy dataset directly within the script for testing purposes.
