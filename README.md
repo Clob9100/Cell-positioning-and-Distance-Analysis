@@ -61,12 +61,15 @@ Alternatively, you can generate a dummy dataset directly in the script. This dat
 **import numpy as np**
 **import pandas as pd**
 
+
 **np.random.seed(42)** *# Set the seed for reproducibility*
+
 
 **num_cells = 100** *# Create a dummy dataset*
 **X_coordinates = np.random.uniform(0, 100, num_cells)**
 **Y_coordinates = np.random.uniform(0, 100, num_cells)**
 **KM_labels = np.random.choice([1, 2], num_cells)**
+
 
 **data = pd.DataFrame({ *# Combine into a DataFrame*
     'X': X_coordinates,
